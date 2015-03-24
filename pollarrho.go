@@ -49,7 +49,7 @@ func PollarRho(num, c int) (int, error) {
 	return p, nil
 }
 
-func factor(num int) []int {
+func Factor(num int) []int {
 	var prims []int
 	for num != 1 {
 		p, err := PollarRho(num, 1)
