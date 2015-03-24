@@ -27,8 +27,8 @@ func multMod(a, b, m int) int {
 }
 
 func PollarRho(num, c int) (int, error) {
-	x := 2
-	y := x
+	x := 1
+	y := 1
 	p := 1
 
 	for p == 1 {
