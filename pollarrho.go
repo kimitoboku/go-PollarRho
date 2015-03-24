@@ -1,4 +1,4 @@
-package PollarRho
+package pollarrho
 
 import (
 	"errors"
