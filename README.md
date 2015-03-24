@@ -1,6 +1,10 @@
 ### go-PollarRho
 
-a Go package to Pollard-Rho-factor Alg
+a Go package to Pollard-Rho-factor algorithm
+
+### Getting
+
+    go get -u bitbucket.org/kimitoboku/go-PollarRho
 
 ### Importing
 
@@ -9,9 +13,17 @@ a Go package to Pollard-Rho-factor Alg
 ### How to
 
 ```go
+package main
+
+import (
+"bitbucket.org/kimitoboku/go-PollarRho"
+"fmt"  
+)
+func main(){
 num := 323911866737
 list := pollarrho.Factor(num)
-fmt.Println(list) 
+fmt.Println(list)
+}
 ```
 
 ```
