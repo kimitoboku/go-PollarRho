@@ -1,6 +1,6 @@
 include $(GOROOT)/src/Make.inc
 
-TARG    = bitbucket.org/kimitoboku/go-PollarRho
+TARG    = PollarRho
 GOFILES = pollarrho.go
 
 include $(GOROOT)/src/Make.pkg
