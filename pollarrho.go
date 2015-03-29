@@ -62,28 +62,21 @@ func allPrime(num []int) bool {
 
 func Factor(num int) []int {
 	var prims []int
+
+	for num%2 == 0 {
+		num = num / 2
+		prims = append(prims, 2)
+	}
+
 	for num != 1 {
-		p, err := PollarRho(num, 1)
+		p, err := PollarRho(num, 2)
 		if err != nil {
 			prims = append(prims, num)
 			break
 		}
 		num = num / p
 		prims = append(prims, p)
-
 	}
 
 	return prims
-}
-
-func PrimeFactor(num []int) []int {
-	if allPrime(num) {
-		return num
-	}
-	var priList []int
-	for _, i := range num {
-		pList := Factor(i)
-		priList = append(priList, pList...)
-	}
-	return PrimeFactor(priList)
 }
