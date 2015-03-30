@@ -4,11 +4,11 @@ a Go package to Pollard-Rho-factor algorithm
 
 ### Getting
 
-    go get -u bitbucket.org/kimitoboku/go-PollarRho
+    go get -u github.com/kimitoboku/go-PollarRho
 
 ### Importing
 
-    import "bitbucket.org/kimitoboku/go-PollarRho"
+    import "github.com/kimitoboku/go-PollarRho"
 
 ### How to
 
@@ -16,7 +16,7 @@ a Go package to Pollard-Rho-factor algorithm
 package main
 
 import (
-"bitbucket.org/kimitoboku/go-PollarRho"
+"github.com/kimitoboku/go-PollarRho"
 "fmt"  
 )
 func main(){
