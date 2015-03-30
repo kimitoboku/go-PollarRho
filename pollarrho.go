@@ -49,17 +49,6 @@ func PollarRho(num, c int) (int, error) {
 	return p, nil
 }
 
-func allPrime(num []int) bool {
-	for _, i := range num {
-		_, err := PollarRho(i, 1)
-		if err == nil {
-			return false
-		}
-	}
-
-	return true
-}
-
 func Factor(num int) []int {
 	var prims []int
 
